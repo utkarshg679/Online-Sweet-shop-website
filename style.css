@@ -1,0 +1,256 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100vw;
+}
+.container{
+    width: 100vw;
+    height: 200vh;
+    overflow: hidden;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(132deg, rgba(2,0,36,1) 0%, rgba(255,255,205,0.6167717086834734) 0%, rgba(205,214,255,1) 64%, rgba(0,212,255,1) 100%);}
+.navcontainer{
+    width: 100%;
+    padding: 40px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(116,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    width: 100vw;
+    min-height: 100px;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#navlist{
+    width: 100%;
+    list-style-type: none;
+    font-size: 1.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1.3px 1.3px black;
+    color: goldenrod;
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#anchors{
+    display: flex;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    gap: 20px;
+}
+.footerBox{
+    width: 100%;
+    margin-right: 40px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(116,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+.footerBox p{
+    height: 40px;
+    text-align: center;
+    color: goldenrod;
+}
+.contentbox{
+    height: 100%;
+    width: 100%;
+    perspective: 1000px;
+    display: flex;
+    
+}
+
+.recipecontainer1{
+    margin: 40px;
+    width: 400px;
+    height: 440px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    display: flex;
+}
+    
+
+.recipe1front{
+    background-color: ivory;
+    border: 4px double black;
+    box-shadow: 3px 3px 10px 5px black;
+    height: 500px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+    transition: all 0.4s linear 0s;
+}
+.recipe1front:hover{
+    transform: scale(1.3);
+}
+.recipe1back{
+    background-color: lightsalmon;
+    border: 4px double black;
+    box-shadow: 3px 3px 10px 5px black;
+    height: 500px;
+    width: 450px;
+    padding: 4px;
+    position: relative;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    align-items: center;
+}
+.recipe1front,.recipe1back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hides the backface when not visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recipecontainer1:hover{
+    transform: rotateY(180deg);
+}
+.buynowbutton{
+    border: 2px solid black;
+    background-color: brown;
+}
+#ingredients{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: larger;
+    list-style-type: none;
+}
+#recipe{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: larger;
+}
+#name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#recipesteps{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.recipecontainer2{
+    margin: 40px;
+    width: 400px;
+    height: 440px;
+    position: relative;
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+    transition: transform 0.5s;
+    display: flex;
+    
+}
+.recipe2front{
+    background-color: ivory;
+    border: 4px double black;
+    box-shadow: 3px 3px 10px 5px black;
+    height: 500px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+    
+}
+.recipe2back{
+    background-color: lightsalmon;
+    border: 4px double black;
+    box-shadow: 3px 3px 10px 5px black;
+    height: 500px;
+    width: 450px;
+    padding: 4px;
+    position: relative;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.recipe2front,.recipe2back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hides the backface when not visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recipecontainer2:hover{
+    transform: rotateY(180deg);
+}
+.recipecontainer3{
+    margin: 40px;
+    width: 400px;
+    height: 440px;
+    position: relative;
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+    transition: transform 0.5s;
+    display: flex;
+    
+}
+.recipe3front{
+    background-color: ivory;
+    border: 4px double black;
+    box-shadow: 3px 3px 10px 5px black;
+    height: 500px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0deg);
+    
+}
+.recipe3back{
+    background-color: lightsalmon;
+    border: 4px double black;
+    box-shadow: 3px 3px 10px 5px black;
+    height: 500px;
+    width: 450px;
+    padding: 4px;
+    position: relative;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    align-items: center;
+}
+.recipe3front,.recipe3back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hides the backface when not visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recipecontainer3:hover{
+    transform: rotateY(180deg);
+}
+.contentbox2{
+    height: 100%;
+    width: 100%;
+    perspective: 1000px;
+    display: flex;
+    
+}
